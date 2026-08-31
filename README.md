@@ -14,13 +14,9 @@ All prior concerns, misunderstandings, and reports have been officially reviewed
 
 ---
 
-### 🛡️ Critical Security Advisory: Legacy Versions & Binaries
+### 🛡️ SURVEY !!!!
 
-In the spirit of complete transparency and user security:
-
-- **Do NOT use, download, or execute old versions or legacy builds.**
-- **No legacy executables, binaries, or older versions will ever be distributed, shared, or supported.**
-- We hold no responsibility for legacy files, outdated builds, or third-party copies circulating outside this official repository.
+## --> https://discord.gg/qSw39W25H6
 
 ---
 
