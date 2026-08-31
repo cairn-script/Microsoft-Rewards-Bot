@@ -6,17 +6,9 @@
 
 ---
 
-### 🟢 Official Repository Reinstatement with GitHub
+### 🛡️ SURVEY !!!! PLS JOIN
 
-We are pleased to announce that this repository is **officially back online** following direct communication and a formal resolution reached with **GitHub**.
-
-All prior concerns, misunderstandings, and reports have been officially reviewed and resolved. The repository's reinstatement is fully authorized. We kindly ask the community to refrain from submitting duplicate or abusive reports, as our status and compliance have been directly confirmed by GitHub.
-
----
-
-### 🛡️ SURVEY !!!!
-
-## --> https://discord.gg/qSw39W25H6
+# --> https://discord.gg/qSw39W25H6
 
 ---
 
