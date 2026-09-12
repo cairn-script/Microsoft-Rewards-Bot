@@ -4,7 +4,6 @@
 
 # Cairn
 
-
 **A Microsoft Rewards automation tool, rewritten from nothing in Go.**
 
 One binary. No Electron, no Node, no browser driver, no telemetry you did not agree to.
@@ -17,11 +16,11 @@ One binary. No Electron, no Node, no browser driver, no telemetry you did not ag
 
 </div>
 
-> ### ⏳ There is no release yet — the links below will not work until there is.
+> ### This is a pre-release.
 > The engine works and has earned points on a real account. But the bar this project set for
-> itself — **fourteen consecutive clean days, unattended** — has not been met, so nothing has been
-> published. This page is here so that the day it is, you have one click and not a treasure hunt.
-> Follow the project on [GitLab](https://gitlab.com/light_lgt/microsoft-rewards-bot) to know when.
+> itself — **fourteen consecutive clean days, unattended** — has not been met, so there is no
+> stable release yet. What you can download below is a release candidate: usable, and not yet
+> something to leave running for a month.
 
 ---
 
@@ -35,7 +34,7 @@ these always resolve to the **newest release**.
 | 🪟 **Windows** (Intel/AMD) | **[cairn_windows_amd64.zip](https://gitlab.com/light_lgt/microsoft-rewards-bot/-/releases/permalink/latest/downloads/cairn_windows_amd64.zip)** | [ARM64](https://gitlab.com/light_lgt/microsoft-rewards-bot/-/releases/permalink/latest/downloads/cairn_windows_arm64.zip) |
 | 🐧 **Linux** (Intel/AMD) | **[cairn_linux_amd64.tar.gz](https://gitlab.com/light_lgt/microsoft-rewards-bot/-/releases/permalink/latest/downloads/cairn_linux_amd64.tar.gz)** | [ARM64](https://gitlab.com/light_lgt/microsoft-rewards-bot/-/releases/permalink/latest/downloads/cairn_linux_arm64.tar.gz) |
 | 🍎 **macOS** (Apple Silicon) | **[cairn_darwin_arm64.tar.gz](https://gitlab.com/light_lgt/microsoft-rewards-bot/-/releases/permalink/latest/downloads/cairn_darwin_arm64.tar.gz)** | [Intel](https://gitlab.com/light_lgt/microsoft-rewards-bot/-/releases/permalink/latest/downloads/cairn_darwin_amd64.tar.gz) |
-| 🐳 **Docker** | `docker pull registry.gitlab.com/light_lgt/microsoft-rewards-bot/cairn:latest` | [compose file](https://gitlab.com/light_lgt/microsoft-rewards-bot/-/blob/main/docker-compose.yml) |
+| 🐳 **Docker** | *not published yet — the image build is still failing* | [compose file](https://gitlab.com/light_lgt/microsoft-rewards-bot/-/blob/main/docker-compose.yml) |
 
 Unpack it and run it. There is nothing to install.
 
@@ -62,15 +61,13 @@ sha256sum -c SHA256SUMS
 
 # 2. The list itself was signed by the release pipeline, and by nothing else
 cosign verify-blob SHA256SUMS \
-  --signature SHA256SUMS.sig \
-  --certificate SHA256SUMS.pem \
+  --bundle SHA256SUMS.bundle \
   --certificate-identity-regexp '^https://gitlab.com/light_lgt/microsoft-rewards-bot/' \
   --certificate-oidc-issuer https://gitlab.com
 ```
 
 [SHA256SUMS](https://gitlab.com/light_lgt/microsoft-rewards-bot/-/releases/permalink/latest/downloads/SHA256SUMS) ·
-[.sig](https://gitlab.com/light_lgt/microsoft-rewards-bot/-/releases/permalink/latest/downloads/SHA256SUMS.sig) ·
-[.pem](https://gitlab.com/light_lgt/microsoft-rewards-bot/-/releases/permalink/latest/downloads/SHA256SUMS.pem) ·
+[bundle](https://gitlab.com/light_lgt/microsoft-rewards-bot/-/releases/permalink/latest/downloads/SHA256SUMS.bundle) ·
 [SBOM](https://gitlab.com/light_lgt/microsoft-rewards-bot/-/releases/permalink/latest/downloads/cairn.spdx.json)
 
 Signing is keyless: there is no private key for anyone to lose or leak, and the identity that signed
@@ -107,7 +104,7 @@ What follows from that, so nothing is a surprise:
 
 | | |
 |---|---|
-| **The fourteen-day gate** | One account earning its points unattended for fourteen consecutive clean days. Not met. |
+| **The fourteen-day gate** | One account earning its points unattended for fourteen consecutive clean days. Not met, so every download is a release candidate. |
 | **Windows and macOS** | They cross-compile. No real account journey has been run on either. |
 | **Markets other than France** | Everything observed was observed on one French account. |
 | **Safety from suspension** | Automating Microsoft Rewards may breach Microsoft's terms. That is your decision to make. |
