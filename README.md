@@ -1,6 +1,9 @@
 <div align="center">
 
+<img width="256" height="256" alt="cairn-mark-256" src="https://github.com/user-attachments/assets/c2dba08c-81ef-429f-b13b-72ce8a8b7110" />
+
 # Cairn
+
 
 **A Microsoft Rewards automation tool, rewritten from nothing in Go.**
 
