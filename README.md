@@ -6,7 +6,7 @@
 
 **A Microsoft Rewards automation tool, rewritten from nothing in Go.**
 
-One binary. No Electron, no Node, no browser driver, no telemetry you did not agree to.
+One binary (Open Source in Gitlab). No Electron, no Node, no browser driver, no telemetry you did not agree to.
 
 [![License](https://img.shields.io/badge/License-AGPL--3.0-4968f2)](https://gitlab.com/light_lgt/microsoft-rewards-bot/-/blob/main/LICENSE)
 [![Source](https://img.shields.io/badge/Source%20%26%20issues-GitLab-fc6d26?logo=gitlab&logoColor=white)](https://gitlab.com/light_lgt/microsoft-rewards-bot)
